@@ -30,12 +30,13 @@
 \section*{\rm\vspace{-0.5\baselineskip}\centering{Criterion B: Analysis}}
 \subsection*{Proposed solution}
 \todo{refer to scenario from crit A}
+
 \section*{Requirement specification}
 \subsection*{IT system requirements}
 \subsection*{System interaction}
 \subsection*{Input/output requirements}
 \subsection*{Processing}
 \subsection*{Security}
-%\section*{Specific performance criteria}
+\section*{Specific performance criteria}
 \section*{Justification of chosen solution}
 \end{document}
