@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="itgs_ia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KOP-Cg-B1p">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                            </mapView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asc-VO-f6d">
+                                <rect key="frame" x="665" y="956" width="51" height="31"/>
+                                <color key="onTintColor" red="0.99215686274509807" green="0.34901960784313724" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="checked:" destination="BYZ-38-t0r" eventType="valueChanged" id="DvE-Ga-3ha"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KOP-Cg-B1p" firstAttribute="trailing" secondItem="yCy-l9-W7o" secondAttribute="trailing" id="JZK-af-68h"/>
+                            <constraint firstItem="KOP-Cg-B1p" firstAttribute="bottom" secondItem="yCy-l9-W7o" secondAttribute="bottom" id="Jml-aG-ZIm"/>
+                            <constraint firstItem="yCy-l9-W7o" firstAttribute="bottom" secondItem="asc-VO-f6d" secondAttribute="bottom" constant="37" id="MKq-AR-ckQ"/>
+                            <constraint firstItem="KOP-Cg-B1p" firstAttribute="leading" secondItem="yCy-l9-W7o" secondAttribute="leading" id="jYv-YP-gBH"/>
+                            <constraint firstItem="yCy-l9-W7o" firstAttribute="trailing" secondItem="asc-VO-f6d" secondAttribute="trailing" constant="54" id="mve-xy-Xrj"/>
+                            <constraint firstItem="KOP-Cg-B1p" firstAttribute="top" secondItem="yCy-l9-W7o" secondAttribute="top" id="w67-Zc-dDf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yCy-l9-W7o"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="KOP-Cg-B1p" id="BmU-CC-NF4"/>
+                        <outlet property="mark_switch" destination="asc-VO-f6d" id="fbn-60-AWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.34375" y="17.578125"/>
+        </scene>
+    </scenes>
+</document>
