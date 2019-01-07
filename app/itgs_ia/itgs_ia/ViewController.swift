@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  itgs_ia
 //
-//  Created by Samuel Engel on 12.12.18.
 //
 
 import UIKit
@@ -31,7 +30,8 @@ class ViewController: UIViewController {
         mapView.delegate = self
         
         func load_locations() {
-            //load json file with location informations
+            print("start of load_locations")
+            //load json file with location information
             guard let file_name = Bundle.main.path(forResource: "marks", ofType: "json")
                 else { return }
             let optionalData = try? Data(contentsOf: URL(fileURLWithPath: file_name))
@@ -47,36 +47,36 @@ class ViewController: UIViewController {
             // append each obejct into the Locations array after going through the parser
             let valid_locations = dictionary.compactMap { Location(json: $0) }
             locations.append(contentsOf: valid_locations)
+            print("end of load_socations")
         }
         //plot locations
+        print("loading")
         load_locations()
+        print(locations)
         mapView.addAnnotations(locations)
     }
     
     @IBOutlet weak var mark_switch: UISwitch!
-    
-    /*@IBAction func mark_clicked(_ sender: UISwitch) {
-        if mark_switch.isOn {
-            mapView.removeAnnotations(locations)
-            mark_switch.setOn(false, animated:true)
-            print("switch is on")
-        } else {
-            mapView.addAnnotations(locations)
-            print("switch is off")
-            mark_switch.setOn(true, animated:true)
-        }
-    }*/
-    
     // hide annotations on switch change
     @IBAction func checked(_ sender: UISwitch) {
         if mark_switch.isOn {
             mapView.removeAnnotations(locations)
             mark_switch.setOn(false, animated:true)
-            print("switch is on")
         } else {
             mapView.addAnnotations(locations)
-            print("switch is off")
             mark_switch.setOn(true, animated:true)
+        }
+    }
+    
+    @IBOutlet weak var map_type_switch: UISwitch!
+    //swich map type on switch change
+    @IBAction func type_switched(_ sender: UISwitch) {
+        if map_type_switch.isOn {
+            mapView.mapType = MKMapType.satellite
+            map_type_switch.setOn(false, animated:true)
+        } else {
+            mapView.mapType = MKMapType.standard
+            map_type_switch.setOn(true, animated:true)
         }
     }
     
@@ -104,16 +104,18 @@ extension ViewController: MKMapViewDelegate {
         }
         return view
     }
-    //run when user clicks the info button on any annotation
+    //run when user clicks the info button on an annotation
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
+
         let location = view.annotation as! Location
         let title = location.title
-        let block = location.block
-        let floor = location.floor
-        let ac = UIAlertController(title: title, message: "Can be found in the \(block) block \(floor)", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+        let description = location.location_description
+        
+        //define alert message and display it
+        let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 
 }

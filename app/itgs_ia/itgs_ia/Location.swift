@@ -2,7 +2,6 @@
 //  Location.swift
 //  itgs_ia
 //
-//  Created by Samuel Engel on 12.12.18.
 //
 
 import Foundation
@@ -35,8 +34,8 @@ class Location: NSObject, MKAnnotation {
         self.coordinate = CLLocationCoordinate2D(latitude: latitude as! CLLocationDegrees, longitude: longitude as! CLLocationDegrees)
     }
     
-    //use description as a subtitle in annotations
+    //use location as a subtitle in annotations
     var subtitle: String? {
-        return location_description
+        return "Located in \(block) block \(floor)"
     }
 }

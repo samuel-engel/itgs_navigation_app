@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  itgs_ia
 //
-//  Created by Samuel Engel on 12.12.18.
 //
 
 import UIKit
