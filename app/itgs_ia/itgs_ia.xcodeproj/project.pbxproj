@@ -44,6 +44,7 @@
 		BD44093E21C1A61C00798025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD44094721C1B1E100798025 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BD6442C621E2778700355EC6 /* marks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = marks.json; sourceTree = "<group>"; };
+		BD6442CC21E8B2DB00355EC6 /* gps.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gps.gpx; sourceTree = "<group>"; };
 		CAF2219C00D98EF0C22E9ED3 /* Pods-itgs_ia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itgs_ia.release.xcconfig"; path = "Pods/Target Support Files/Pods-itgs_ia/Pods-itgs_ia.release.xcconfig"; sourceTree = "<group>"; };
 		CBA38F4B9A227F327F1101DF /* Pods_itgs_iaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itgs_iaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30BEDA9A6960BE799A05801 /* Pods-itgs_iaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itgs_iaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-itgs_iaTests/Pods-itgs_iaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BD44092721C1A61500798025 /* AppDelegate.swift */,
+				BD6442CC21E8B2DB00355EC6 /* gps.gpx */,
 				BD44092921C1A61500798025 /* ViewController.swift */,
 				BD44094721C1B1E100798025 /* Location.swift */,
 				BD6442C621E2778700355EC6 /* marks.json */,

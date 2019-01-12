@@ -79,7 +79,19 @@ class ViewController: UIViewController {
             map_type_switch.setOn(true, animated:true)
         }
     }
+    let locationManager = CLLocationManager()
+    func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkLocationAuthorizationStatus()
+    }
     
 }
 extension ViewController: MKMapViewDelegate {
