@@ -6,17 +6,56 @@
      waypoint, Xcode will simulate that specific location. If you provide multiple waypoints,
      Xcode will simulate a route visiting each waypoint.
      -->
-    <wpt lat="52.364206" lon="9.733713">
-        <name>Hanover, ISHR</name>
-        
-        <!--
-         Optionally provide a time element for each waypoint. Xcode will interpolate movement
-         at a rate of speed based on the time elapsed between each waypoint. If you do not provide
-         a time element, then Xcode will use a fixed rate of speed.
-         
-         Waypoints must be sorted by time in ascending order.
-         -->
-        <time>2014-09-24T14:55:37Z</time>
+    <wpt lat="52.3632544" lon="9.7342834">
+        <time>2019-01-13T00:00:00Z</time>
+    </wpt>
+    <wpt lat="52.363428" lon="9.7341496">
+        <time>2019-01-13T00:00:15Z</time>
+    </wpt>
+    <wpt lat="52.3633199" lon="9.7336668">
+        <time>2019-01-13T00:00:41Z</time>
+    </wpt>
+    <wpt lat="52.3633625" lon="9.733597">
+        <time>2019-01-13T00:00:45Z</time>
+    </wpt>
+    <wpt lat="52.3634248" lon="9.7336131">
+        <time>2019-01-13T00:00:50Z</time>
+    </wpt>
+    <wpt lat="52.363487" lon="9.7335488">
+        <time>2019-01-13T00:00:56Z</time>
+    </wpt>
+    <wpt lat="52.3636016" lon="9.7335756">
+        <time>2019-01-13T00:01:06Z</time>
+    </wpt>
+    <wpt lat="52.363713" lon="9.7335327">
+        <time>2019-01-13T00:01:15Z</time>
+    </wpt>
+    <wpt lat="52.363831" lon="9.7334576">
+        <time>2019-01-13T00:01:25Z</time>
+    </wpt>
+    <wpt lat="52.3639522" lon="9.7335273">
+        <time>2019-01-13T00:01:35Z</time>
+    </wpt>
+    <wpt lat="52.3640766" lon="9.7335005">
+        <time>2019-01-13T00:01:45Z</time>
+    </wpt>
+    <wpt lat="52.3641389" lon="9.7334468">
+        <time>2019-01-13T00:01:51Z</time>
+    </wpt>
+    <wpt lat="52.3641913" lon="9.733656">
+        <time>2019-01-13T00:02:02Z</time>
+    </wpt>
+    <wpt lat="52.3642634" lon="9.7336078">
+        <time>2019-01-13T00:02:08Z</time>
+    </wpt>
+    <wpt lat="52.3642994" lon="9.7337204">
+        <time>2019-01-13T00:02:14Z</time>
+    </wpt>
+    <wpt lat="52.3643321" lon="9.7336882">
+        <time>2019-01-13T00:02:18Z</time>
+    </wpt>
+    <wpt lat="52.3643322" lon="9.7336883">
+        <time>2019-01-13T00:04:18Z</time>
     </wpt>
     
 </gpx>
