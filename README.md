@@ -11,12 +11,15 @@ Until now, students had to rely on talking to other people, not always possible 
 
 # Features
 ## Interactive marks with detailed information available
+<img src="https://user-images.githubusercontent.com/40341321/58477145-21bfd700-8153-11e9-9a3f-680c6c818499.gif" width="222" title="In-app TeleOp selection" align="">
 
 ## Precise location tracking
+<img src="https://user-images.githubusercontent.com/40341321/58477194-461bb380-8153-11e9-875a-277b288de2f5.gif" width="222" title="In-app TeleOp selection" align="">
 
 ## Choice between different map modes
+<img src="https://user-images.githubusercontent.com/40341321/58477257-60559180-8153-11e9-96a8-ba4d8dadaa50.gif" width="222" title="In-app TeleOp selection" align="">
 
 ## Sidebar with all locations
-
+<img src="https://user-images.githubusercontent.com/40341321/58477287-6d728080-8153-11e9-98f2-c7f990f60600.gif" width="222" title="In-app TeleOp selection" align="">
 
 
